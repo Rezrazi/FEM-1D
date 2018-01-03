@@ -1,0 +1,149 @@
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration build-checksum="341447312" file="C:\Users\chara\Desktop\TP_MEF\MEF1D_1.prj" location="C:\Users\chara\Desktop\TP_MEF" name="MEF1D_1" preferred-package-location="C:\Users\chara\Desktop\TP_MEF\bin\MEFSolution\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
+    <param.appname>MEFSolution</param.appname>
+    <param.icon>${PROJECT_ROOT}\MEF1D_1_resources\icon.ico</param.icon>
+    <param.icons>
+      <file>${PROJECT_ROOT}\MEF1D_1_resources\icon_48.png</file>
+      <file>${PROJECT_ROOT}\MEF1D_1_resources\icon_32.png</file>
+      <file>${PROJECT_ROOT}\MEF1D_1_resources\icon_24.png</file>
+      <file>${PROJECT_ROOT}\MEF1D_1_resources\icon_16.png</file>
+    </param.icons>
+    <param.version>1.3</param.version>
+    <param.authnamewatermark>CharafR Rezrazi, Ayoub Outaghat</param.authnamewatermark>
+    <param.email>charaf@rezrazi.ma</param.email>
+    <param.company>ENSAM Casablanca GM</param.company>
+    <param.summary>Application pour évaluer la solution d'une équation différentielle avec la MEF en 1D</param.summary>
+    <param.description>&lt;b&gt;Description&lt;/b&gt;
+Application pour évaluer la solution d'une équation différentielle avec la MEF en 1D, codée sur Matlab.
+Elle prend un domaine en 1D, un pas et une fonction second membre, et évalue la solution de l'équation différentielle.
+
+&lt;b&gt;Utilisation&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;Entrer le second membre&lt;/li&gt;
+&lt;li&gt;Entrer le domaine [a,b] et le pas h&lt;/li&gt;
+&lt;li&gt;Entrer les coefficients alpha et beta&lt;/li&gt;
+&lt;li&gt;Choisir la méthode d'approximation P1/P2&lt;/li&gt;
+&lt;li&gt;Activer ou désactiver l'option d'exportation&lt;/li&gt;
+&lt;li&gt;Evaluer la solution&lt;/li&gt;
+&lt;li&gt;Analyser les graphiques&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;b&gt;Informations&lt;/b&gt;
+Réalisée par Charaf Rezrazi et Ayoub Outaghat
+Version 1.3</param.description>
+    <param.screenshot>C:\Users\chara\Desktop\splash.png</param.screenshot>
+    <param.guid />
+    <param.installpath.string>\ENSAM Casablanca GM\MEFSolution\</param.installpath.string>
+    <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
+    <param.logo />
+    <param.install.notes>Cette version d'installation ne contient pas le runtime Matlab, il va être téléchargé et installé automatiquement sur votre système..</param.install.notes>
+    <param.target.install.notes />
+    <param.intermediate>${PROJECT_ROOT}\bin\MEFSolution\for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}\bin\MEFSolution\for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}\bin\MEFSolution\for_redistribution</param.output>
+    <param.logdir>${PROJECT_ROOT}\bin\MEFSolution</param.logdir>
+    <param.enable.clean.build>false</param.enable.clean.build>
+    <param.user.defined.mcr.options />
+    <param.target.type>subtarget.standalone</param.target.type>
+    <param.support.packages />
+    <param.web.mcr>false</param.web.mcr>
+    <param.package.mcr>true</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>MEFSolution-no_runtime-1.3</param.web.mcr.name>
+    <param.package.mcr.name>MEFSolution-runtime-1.3</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>true</param.windows.command.prompt>
+    <param.create.log>true</param.create.log>
+    <param.log.file>log_mef1d.txt</param.log.file>
+    <param.native.matlab>false</param.native.matlab>
+    <param.checkbox>false</param.checkbox>
+    <param.example />
+    <param.help.text />
+    <unset>
+      <param.guid />
+      <param.installpath.string />
+      <param.installpath.combo />
+      <param.logo />
+      <param.target.install.notes />
+      <param.enable.clean.build />
+      <param.user.defined.mcr.options />
+      <param.target.type />
+      <param.support.packages />
+      <param.no.mcr />
+      <param.no.mcr.name />
+      <param.windows.command.prompt />
+      <param.native.matlab />
+      <param.checkbox />
+      <param.example />
+      <param.help.text />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\app1.mlapp</file>
+    </fileset.main>
+    <fileset.resources />
+    <fileset.package />
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}\P1\AssemblageP1.m</file>
+      <file>${PROJECT_ROOT}\P1\EF_P1.m</file>
+      <file>${PROJECT_ROOT}\P1\elemKi_P1.m</file>
+      <file>${PROJECT_ROOT}\P1\elemMi_P1.m</file>
+      <file>${PROJECT_ROOT}\P1\int_phi1_P1.m</file>
+      <file>${PROJECT_ROOT}\P1\int_phi2_P1.m</file>
+      <file>${PROJECT_ROOT}\P1\MaillageP1.m</file>
+      <file>${PROJECT_ROOT}\P1\mat_elem_P1.m</file>
+      <file>${PROJECT_ROOT}\P1\phi1_P1.m</file>
+      <file>${PROJECT_ROOT}\P1\phi1_prime_P1.m</file>
+      <file>${PROJECT_ROOT}\P1\phi2_P1.m</file>
+      <file>${PROJECT_ROOT}\P1\phi2_prime_P1.m</file>
+      <file>${PROJECT_ROOT}\P1\SM_elem_P1.m</file>
+      <file>${PROJECT_ROOT}\P2\AssemblageP2.m</file>
+      <file>${PROJECT_ROOT}\P2\EF_P2.m</file>
+      <file>${PROJECT_ROOT}\P2\elemKi_P2.m</file>
+      <file>${PROJECT_ROOT}\P2\elemMi_P2.m</file>
+      <file>${PROJECT_ROOT}\P2\int_phi1_P2.m</file>
+      <file>${PROJECT_ROOT}\P2\int_phi2_P2.m</file>
+      <file>${PROJECT_ROOT}\P2\int_phi3_P2.m</file>
+      <file>${PROJECT_ROOT}\P2\MaillageP2.m</file>
+      <file>${PROJECT_ROOT}\P2\mat_elem_P2.m</file>
+      <file>${PROJECT_ROOT}\P2\phi1_P2.m</file>
+      <file>${PROJECT_ROOT}\P2\phi1_prime_P2.m</file>
+      <file>${PROJECT_ROOT}\P2\phi2_P2.m</file>
+      <file>${PROJECT_ROOT}\P2\phi2_prime_P2.m</file>
+      <file>${PROJECT_ROOT}\P2\phi3_P2.m</file>
+      <file>${PROJECT_ROOT}\P2\phi3_prime_P2.m</file>
+      <file>${PROJECT_ROOT}\P2\SM_elem_P2.m</file>
+    </fileset.depfun>
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}\bin\MEFSolution\for_testing" name="MEFSolution.exe" optional="false">C:\Users\chara\Desktop\TP_MEF\bin\MEFSolution\for_testing\MEFSolution.exe</file>
+      <file location="${PROJECT_ROOT}\bin\MEFSolution\for_testing" name="readme.txt" optional="true">C:\Users\chara\Desktop\TP_MEF\bin\MEFSolution\for_testing\readme.txt</file>
+      <file location="${PROJECT_ROOT}\bin\MEFSolution\for_testing" name="splash.png" optional="false">C:\Users\chara\Desktop\TP_MEF\bin\MEFSolution\for_testing\splash.png</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>D:\Program Files\MATLAB\R2017b</root>
+      <toolboxes>
+        <toolbox name="matlabcoder" />
+      </toolboxes>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.0</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
