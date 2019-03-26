@@ -1,9 +1,14 @@
 # Méthode d'éléments finis en 1D
+![GitHub](https://img.shields.io/github/license/rezrazi/FEM-1D.svg?style=plastic)
+![GitHub release](https://img.shields.io/github/release/rezrazi/MEF-1D.svg)  
 ![Splash](https://i.imgur.com/npm5Cny.png)
 
 Considérant l'équation différentielle suivante : 
 $$\alpha\ddot{u}+\beta u = f$$
 On cherche à évaluer la solution de cette équation numériquement à l'aide d'un script écrit sous Matlab.
+
+## Téléchargements
+https://github.com/Rezrazi/FEM-1D/releases
 ## Concept
 Le programme **MEFSolution** fonctionne de la manière suivante : 
 1. Maillage du domaine.
